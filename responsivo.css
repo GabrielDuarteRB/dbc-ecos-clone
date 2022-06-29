@@ -1,0 +1,11 @@
+@media(max-width: 985px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .corpo-ecos {
+        grid-template-columns: 450px 300px;
+    }
+
+
+}

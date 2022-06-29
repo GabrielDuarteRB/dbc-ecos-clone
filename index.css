@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sons-serif  ';
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+header {
+    align-items: center;
+    background: url(./img/cabecalho.png), linear-gradient(to bottom right, #295ba7, #78b454);
+    color: white;
+    display: flex;
+    height: 8%; 
+    justify-content: space-between;  
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+}
+
+header div:first-child {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    width: 55%;
+}
+
+header div:first-child > span {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+header div:first-child > span:hover {
+    background-color: rgb(57 89 107 / 40%);
+}
+
+header div:first-child span a h2 {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+header div:first-child input {
+    border: none;   
+    border-radius: 5px;
+    background-color: rgb(60 114 122 / 50%);
+    color: white;
+    padding: 3px 0;
+    width: 300px;
+}
+
+header div:first-child form i {
+    font-size: 10px;
+    margin-left: -20px
+}
+
+header div:first-child form input::placeholder{
+    color: white;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+header div:first-child form input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 2px solid green;
+}
+
+header div:last-child {
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    gap: 20px;
+    margin-right: 20px;
+    width: 10%;
+}
+
+header div:last-child i {
+    cursor: pointer;
+}
+
+header div:last-child span {
+    font-size: 16px;
+}
+
+header div:last-child span i:first-child {
+    color: rgb(128 128 128 / 50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+/* Noticias recentes */
+
+main {
+    margin-top: 80px
+}
+
+.corpo-ecos {
+    display: grid;
+    grid-template-columns: 550px 400px;
+    justify-content: center;
+    gap: 20px   
+}
+
+.corpo-ecos > section:first-child, .sistemas, .ultimos-aniversarios, .aniversarios-hoje, .proximos-aniversarios {
+    background-color: #F8F9FA;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
+}
+
+.corpo-ecos > section:first-child > div:first-child, .sistemas div h3, .ultimos-aniversarios div h3, .aniversarios-hoje div h3, .proximos-aniversarios div h3 {
+    border-bottom: solid 1px #9e9e9e54;
+    font-size: 10px;
+    padding: 14px;
+}
+
+.corpo-ecos > section:first-child > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 15px;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > img {
+    height: 150px;
+    width: 150px;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > h4, .corpo-ecos > section:first-child > div:last-child > div > div > p {
+    margin-top: 5px;
+    font-size: 12px
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > div p{
+    font-size: 10px;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > div > span {
+    display: flex;
+    font-size: 10px;
+    gap: 8px;
+    margin-right: 15px;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > div > span > span > i {
+    color: #6C757D;
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > div > span > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.corpo-ecos > section:first-child > div:last-child > div > div > div > span > span:first-child > i{
+    color: red
+}
+
+/* Sistemas */
+
+.sistemas {
+    padding-bottom: 15px
+}
+
+.sistemas > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 15px ;
+}
+
+.sistemas > div:last-child > span {
+    align-items: center;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 20%);
+    color: green;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    height: 70px;
+    margin: 0 auto;
+    width: 110px;
+}
+
+.sistemas > div:last-child > span:hover {
+    color: white;
+    background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%)
+}
+
+.sistemas > div:last-child > span > i {
+    font-size: 20px;
+}
+
+.sistemas > div:last-child > span > p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Aniversarios */
+
+.ultimos-aniversarios {
+    margin-top: 25px;
+}
+
+.ultimos-aniversarios > div:last-child > div, .aniversarios-hoje > div:last-child > div, .proximos-aniversarios > div:last-child > div{
+    border-bottom: solid 1px #9e9e9e54;
+    display: flex;
+    gap: 25px;
+    padding: 25px
+}
+
+.ultimos-aniversarios > div:last-child > div > img, .aniversarios-hoje > div:last-child > div > img, .proximos-aniversarios > div:last-child > div > img{
+    border-radius: 100%;
+}
+
+.ultimos-aniversarios > div:last-child > div > div > h4, .aniversarios-hoje > div:last-child > div > div > h4, .proximos-aniversarios > div:last-child > div > div > h4{
+    padding-bottom: 10px;
+}
+
+.ultimos-aniversarios > div:last-child > div > div > span, .aniversarios-hoje > div:last-child > div > div > span, .proximos-aniversarios > div:last-child > div > div > span{
+    display: flex;
+    gap: 10px;
+}
+
