@@ -49,3 +49,9 @@
     }
     
 }
+
+@media(max-width: 650px) {
+    header div:last-child {
+            display: none;
+        }
+}
