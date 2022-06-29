@@ -13,11 +13,39 @@
     }
 
     .sistemas > div:last-child {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        margin: 15px ;
     }
 
 }
 
+@media(max-width: 785px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .corpo-ecos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .corpo-ecos > section:first-child > div:last-child > div > div {
+        font-size: 13px;
+    }
+
+    .sistemas > div:last-child {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .ultimos-aniversarios > div:last-child > div, .aniversarios-hoje > div:last-child > div, .proximos-aniversarios > div:last-child > div{
+        gap: 30px;
+    }
+
+    .ultimos-aniversarios > div:last-child > div > div > h4, .aniversarios-hoje > div:last-child > div > div > h4, .proximos-aniversarios > div:last-child > div > div > h4{
+        font-size: 18px;
+    }
+    
+    .ultimos-aniversarios > div:last-child > div > div > p {
+        font-size: 16px;
+    }
+    
+}
